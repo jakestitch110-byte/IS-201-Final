@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joke Generator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      padding-top: 80px; /* prevents navbar overlap */
+    }
+
+    /* NAVBAR */
+    .nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(6px);
+      padding: 10px 0;
+    }
+
+    .nav-inner {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff7e5f;
+    }
+
+    /* MAIN CARD */
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 40px auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #joke {
+      font-size: 18px;
+      margin: 20px 0;
+      min-height: 60px;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #ff7e5f;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #eb5e3f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="logo">😂 Joke App</div>
+      <div class="nav-links">
+        <a href="fromScratch.html">Basketball Page</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <h1>😂 Joke Generator</h1>
+    <div id="joke">Click the button to get a joke!</div>
+    <button onclick="generateJoke()">Tell Me a Joke</button>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    const jokes = [
+      "Why don’t programmers like nature? Too many bugs.",
+      "Why did the computer go to therapy? It had too many bytes of trauma.",
+      "Why do Java developers wear glasses? Because they don’t C#.",
+      "Why was the math book sad? It had too many problems.",
+      "Why did the scarecrow win an award? Because he was outstanding in his field.",
+      "Why don’t skeletons fight each other? They don’t have the guts.",
+      "Why did the student eat his homework? Because the teacher said it was a piece of cake.",
+      "Why was the computer cold? It left its Windows open."
+    ];
+
+    function generateJoke() {
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      document.getElementById("joke").textContent = jokes[randomIndex];
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to right, #2396a3, #32c2ae);
+  color: #333;
+}
+
+h1, h2 {
+  color: #051f1c;
+}
+
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(6px);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+.links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #ffcc00;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+
+.card {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+img {
+  display: block;
+  margin: 50px auto;
+  width: 500px;
+}
+
+
+.button {
+  background: #19a09a;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+.center {
+  text-align: center;
+}
+
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.tableauWrapper {
+  text-align: center;
+}
+
+.tableauPlaceholder {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.tableauViz {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+}
+
